@@ -18,7 +18,7 @@ class OpsAlerm():
         url = self.__sender.Url.replace('${account}',self.__sender.Account).replace('${password}',self.__sender.Password).replace('${mobile}',mobile).replace('${message}',msg)
 
         try:
-            #httpClient = httplib.HTTPConnection('tccommon.17usoft.com', 80, timeout=60)
+            #httpClient = httplib.HTTPConnection('your.domain.com', 80, timeout=60)
             #httpClient.request('GET', '/smstemplate/service/SendMessage?account=TCWeb.Bank&password=TCWeb.Bank9633&mobile=18616805733,13761786363&message=this_is_20test!')
 
             httpClient = httplib.HTTPConnection(self.__sender.Host, int(self.__sender.Port), timeout=60)
